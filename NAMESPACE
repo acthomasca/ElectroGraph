@@ -1,0 +1,48 @@
+useDynLib(ElectroGraph)
+export(network.projection,
+       pair.sequence,
+
+       make.sociomatrix.from.edges,
+       make.sociomatrix.from.lattice,
+
+	#	edge.processor,		sym.test,   ##
+	#	network.components.edges,		network.components.socio,  ##
+
+       electrograph,
+       get.resistance,
+       ohmic.properties,
+       add.shortest.paths,
+       add.betweenness,
+       add.recourse.betweenness,
+
+	#	twosome.solve.socio,		twosome.solve.edges,	##
+       compute.volts.asymmetric.socio,		compute.volts.asymmetric.edges,
+       compute.volts.symmetric.socio,		compute.volts.symmetric.edges,
+
+       wedding.cake.plot,
+       animate.plot.series,
+
+       clustering.statistics.socio,	
+       sociomatrix.to.nby3.edges,
+
+       geodesic.selected.from.edgelist,
+       geodesic.matrix.from.edgelist,
+
+       single.source.betweenness,
+       betweenness.centralities,
+
+       recourse.betweenness.one,
+       recourse.betweenness.source,
+       recourse.betweenness.full,
+
+       dist.coords
+
+	#	geodesic.mat.socio,		shortest.path.maker.socio,		betweenness.centralities.in.r,  ##
+	#	betweenness.centralities.socio,		single.source.betweenness.socio   ##
+
+)
+
+S3method(plot,electrograph)
+S3method(print,electrograph)
+S3method(summary,electrograph)
+S3method(plot,electrograph.plot)
